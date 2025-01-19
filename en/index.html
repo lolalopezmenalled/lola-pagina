@@ -196,29 +196,7 @@ Lola López Menalled
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#about" aria-label="about">
-                            About Me
-                        </a>
-                    </li>
-                    
 
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#experience"
-                            aria-label="experience">
-                            Experience
-                        </a>
-                    </li>
-                    
-
-                    
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#education"
-                            aria-label="education">
-                            Education
-                        </a>
-                    </li>
                     
 
                     
@@ -226,12 +204,7 @@ Lola López Menalled
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="../#contact"
-                            aria-label="contact">
-                            Contact
-                        </a>
-                    </li>
+
                     
 
                     
@@ -279,28 +252,6 @@ Lola López Menalled
                     
                     
 
-                    
-                    <li class="nav-item navbar-text">
-                        
-                        <div class="text-center">
-                            <button id="theme-toggle">
-                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                                </svg>
-                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"></circle>
-                                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </li>
                     
 
                 </ul>
@@ -713,21 +664,11 @@ Lola López Menalled
                         >
                             <div>
                                 <span class="h4"> </span>
-                                <small>-</small>
-                                <a href="" target="_blank">Research</a>
+                                
                                 <div class="pb-1">
                                     <small></small>
                                     
-                                    <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;&#32;&#32;at&#32;Research
-                                        >
-                                            <i class="fas fa-info-circle fa-xs"></i>
-                                        </span>
-                                    </span>
+                                    
                                     
                                 </div>
 
@@ -747,8 +688,7 @@ Lola López Menalled
                         >
                             <div>
                                 <span class="h4">Teaching assistant</span>
-                                <small>-</small>
-                                <a href="" target="_blank">Teaching</a>
+                                
                                 
                                 <div class="pb-1">
                                     <small>July 2021 - present</small>
@@ -788,8 +728,7 @@ Lola López Menalled
                         >
                             <div>
                                 <span class="h4">Communicator </span>
-                                <small>-</small>
-                                <a href="%20" target="_blank">Outreach</a>
+                                
                                 
                                 <div class="pb-1">
                                     <small></small>
@@ -871,7 +810,7 @@ Lola López Menalled
             <div class="row justify-content-center px-md-5">
                 <div class="col-md-8 py-3">
                     <div class="text-center">
-                        No tengo redes sociales pero por suerte tengo mail.
+                        
                     </div>
                     
                     <div class="text-center pt-3">
@@ -948,31 +887,10 @@ Lola López Menalled
 </div>
 </footer><script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    if (document.body.className.includes("light")) {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
     }
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-
 </script>
 
 
